@@ -3,20 +3,18 @@ import 'question.dart';
 class QuizBrain {
   int questionNumber = 0;
   List<Question> questionBank = [
-    Question("Albert Einstein was awarded the Nobel Prize in Physics", true),
-    Question('Baby koalas are called joeys.', true),
-    Question('Gone with the Wind takes place in Savannah, Georgia.', false),
-    Question('The American Civil War ended in 1776.', false),
-    Question('A right triangle can never be equilateral.', true),
-    Question('Snow White’s seven dwarfs all worked as lumberjacks.', false),
-    Question('There are seven red stripes in the United States flag.', true),
-    Question('No bird can fly backwards.', false),
-    Question(
-        'The Bill of Rights contains 10 amendments to the Constitution.', true),
-    Question('You can lead a cow downstairs but not upstairs.', false),
-    Question('Approximately one quarter of human bones are in the feet', true),
-    Question("A slug's blood is green", true)
-  ];
+    Question("Coronavirus (COVID-19) is an illness caused by a virus that can spread from person to person.", true),
+    Question('People who are below the age of 25 do not catch Covid', false),
+    Question('Covid does not stay on plastic for more than an hour', false),
+    Question('Social distancing is the only key to avoid Covid', true),
+    Question('Covid includes symptoms such as dry cough, shortness of breath and fever', true),
+    Question('Washing your hands with a sanitizer or soap can protect you from contracting the virus', true),
+    Question('We should report to the nearest hospital if we see symptoms', true),
+    Question('Covid is a digestive disease', false),
+    Question('The Corona virus disease has been announced a worldwide pandemic', true),
+    Question('We should love and respect our doctors and police personnel who are protecting us', true),
+    Question('There is a vaccine for Covid-19', false),
+    Question("We should utilize our time by staying indoors during Covid-19", true)
 
   void nextQuestion() {
     if (questionNumber < questionBank.length - 1) {
